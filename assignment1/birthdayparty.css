@@ -1,0 +1,111 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #AC6F94;
+  font-family: 'Jura', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+#wrapper {
+  margin: 24px auto;
+  max-width: 1200px;
+  width: 95%;
+  background-color: #FFD5E0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 40px 0;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.header-title {
+    animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 2 / span 10;
+  margin: 0 0 20px 0;
+  color: #000; 
+  text-shadow: 
+    0 0 10px #fff, 
+    0 0 20px #fff, 
+    0 0 30px #fff;
+}
+
+.video-thumbnail {
+    animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 2 / span 10;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.beyonce-logo {
+    animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 6 / span 6;
+  width: 100%;
+  height: auto;
+  justify-self: end;
+}
+
+/* Main Section - Full Width */
+main {
+  padding: 0;
+}
+
+.hero-section {
+    animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  background-color: #ffffff;
+  padding: 60px 8.33%; /* 8.33% roughly matches 1 grid column of padding */
+}
+
+.hero-section h2 {
+  margin-top: 0;
+  font-size: 55px;
+}
+
+.hero-section p {
+    font-size: 35px;
+}
+
+/* Footer Adjustments */
+footer {
+  padding: 60px 0;
+  align-items: center;
+}
+
+.billboard {
+  grid-column: 2 / span 4;
+  width: 100%;
+  height: auto;
+}
+
+.audio-player {
+  grid-column: 8 / span 4;
+  display: flex;
+  justify-content: flex-end;
+}
+
+audio {
+  width: 100%;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
