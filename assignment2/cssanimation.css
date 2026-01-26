@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.textContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sub-text {
+    font-size: 24px;
+    color: #666;
+    margin: 5px 0; 
+    text-align: center;
+}
+
+h2.sub-text {
+    font-weight: normal;
+}
+
+
+.corner-img {
+    position: fixed;
+    width: 300px; 
+    height: auto;
+    z-index: 10;
+    pointer-events: auto; 
+    animation: perimeterMove 20s linear infinite;
+    transition: filter 0.3s ease;
+}
+
+.corner-img:hover {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' style='font-size:30px;'><text y='35' fill='pink'>❤</text></svg>"), auto;
+    filter: brightness(1.1);
+}
+
+.cat-1:hover { content: url('kittenroll-HOVER.png'); }
+.cat-2:hover { content: url('playingcat-HOVER.png'); }
+.cat-3:hover { content: url('kittenpounce-HOVER.png'); }
+.cat-4:hover { content: url('kittenweary-HOVER.png'); }
+
+.cat-1 { animation-delay: 0s; }
+.cat-2 { animation-delay: -5s; }
+.cat-3 { animation-delay: -10s; }
+.cat-4 { animation-delay: -15s; }
+
+@keyframes perimeterMove {
+    0%   { top: 0; left: 0; transform: translate(0, 0); }
+    25%  { top: 0; left: 100%; transform: translate(-100%, 0); }
+    50%  { top: 100%; left: 100%; transform: translate(-100%, -100%); }
+    75%  { top: 100%; left: 0; transform: translate(0, -100%); }
+    100% { top: 0; left: 0; transform: translate(0, 0); }
+}
+
+/* --- bouncing h1 inspired by: https://codepen.io/salraza1993/pen/LYpzqZW --- */
+
+h1 {
+    position: relative;
+    font-size: 100px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: pink;
+    display: flex;
+    justify-content: center;
+}
+
+span { display: inline-block; position: relative; }
+
+.bouncingAnim { justify-content: center; align-items: flex-end; }
+
+@keyframes bounce {
+  0%, 75%, 100% { transform: translateY(0); opacity: 1; }
+  25% { transform: translateY(-20px); color: palevioletred; } 
+}
+
+.bouncingAnim span:nth-child(1) { animation: bounce 2.3s ease-in-out infinite; }
+.bouncingAnim span:nth-child(2) { animation: bounce 2.3s ease-in-out .2s infinite; }
+.bouncingAnim span:nth-child(3) { animation: bounce 2.3s ease-in-out .4s infinite; }
+.bouncingAnim span:nth-child(4) { animation: bounce 2.3s ease-in-out .6s infinite; }
+.bouncingAnim span:nth-child(5) { animation: bounce 2.3s ease-in-out .8s infinite; }
+.bouncingAnim span:nth-child(6) { animation: bounce 2.3s ease-in-out 1.0s infinite; }
+.bouncingAnim span:nth-child(7) { animation: bounce 2.3s ease-in-out 1.2s infinite; }
+.bouncingAnim span:nth-child(8) { animation: bounce 2.3s ease-in-out 1.4s infinite; }
