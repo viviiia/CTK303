@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #383838;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+#wrapper {
+  margin: 24px auto;
+  max-width: 1200px;
+  width: 95%;
+  background-color: #b7b7b7;
+}
+
+header { padding: 40px 0; }
+.header-title {
+  grid-column: 2 / span 10;
+  font-size: 80px;
+  text-align: center;
+}
+
+.hero-section {
+  grid-column: 1 / span 12;
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+}
+
+footer {
+  padding: 60px 0;
+}
+
+#game-container {
+  grid-column: 1 / span 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 5px solid #000;
+  display: block;
+}
