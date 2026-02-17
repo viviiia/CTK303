@@ -123,7 +123,7 @@ audio {
 }
 
 
-/*  30rem (480px)   */
+/*  30rem (480px)  mobile */
 
 
 @media all and (min-width: 30rem) {
@@ -162,7 +162,7 @@ audio {
 }
 
 
-/* 50rem (800px)   */
+/* 50rem (800px)  desktop */
 
 
 @media all and (min-width: 50rem) {
@@ -217,5 +217,51 @@ audio {
 
   .audio-player {
     grid-column: 8 / span 4;
+  }
+}
+
+
+/* 40rem (640px)   tablet */
+
+
+@media all and (min-width: 40rem) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .header-title {
+    grid-column: 2 / span 10;
+  }
+
+  .video-thumbnail {
+    grid-column: 2 / span 10;
+  }
+
+  .beyonce-logo {
+    grid-column: 3 / span 8;
+    width: 65%;
+    justify-self: center;
+  }
+
+  .hero-section {
+    grid-column: 2 / span 10;
+    padding: 3rem 2.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.6rem;
+  }
+
+  .billboard {
+    grid-column: 2 / span 5;
+  }
+
+  .audio-player {
+    grid-column: 7 / span 5;
   }
 }
