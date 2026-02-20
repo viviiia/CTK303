@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorite Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--My CSS sheet overrides my bootstrap, so I put some style here. I wanted to use my own colors-->
+  <style> 
+
+    .my-nav {
+    background-color: #f8e0ec; 
+    }
+
+    .form-control {
+    border-color: #ac6689;
+    }
+
+    .form-control:focus {
+      border-color: #ac6689;
+      box-shadow: 0 0 0 0.25rem rgba(172, 102, 137, 0.25);
+    }
+
+    .my-brand {
+    font-size: 1.75rem;    
+    font-weight: 700;           
+    color: #ac6689 !important;   
+    text-shadow: 0 0 10px white;  
+    }
+
+
+    .navbar .btn {
+      border-color: #ac6689;
+      color: #ac6689;
+    }
+
+    .navbar .btn:hover {
+      background-color: #ac6689;
+      color: white;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 250px;      
+      object-fit: cover;  
+      object-position: center;
+    }
+
+    .my-footer {
+    border-color: #ac6689;
+    background-color: #f8e0ec;
+    }
+
+    a{
+      color: #ac6689;
+    }
+    a:hover {
+      color: maroon;
+    }
+
+    .my-pink-btn {
+      background-color: #e8c9d8; 
+      color: black;              
+      text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .my-pink-btn:hover {
+      background-color: #ac6689;
+    }
+
+    .card-img-size {
+      height: 150px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+
+  </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+  <nav class="navbar navbar-expand-lg my-nav">
+    
+     <div class="container-fluid">
+    <a class="navbar-brand my-brand" href="#">🍓 Vivia's Favorite Recipes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Entrees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sides</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Desserts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Drinks</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn my-pink-btn" type="submit">Search</button>
+      </form>
+
+    </div> 
+    </div><!--container-fluid-->
+  </nav>
+
+    <h1 class="display-2 visually-hidden" >My Favorite Recipes</h1>
+    <img class="img-fluid banner-img" src="cake.png" alt="cake">
+
+  <!--6 sections fav recipes-->
+    <div class="row"> <!--row 1-->
+      <div class="col-md d-flex justify-content-center">
+        <div class="card shadow-lg mt-3" style="width: 18rem;">
+        <img src="cookies.jpg" class="card-img-top card-img-size" alt="Cookies">
+        
+        <div class="card-body">
+        <h2 class="card-title">Browned Butter Chocolate Chip Cookies</h2>
+        <p class="card-text">My go-to cookie recipe that I will die behind! What makes these cookies special is the browned butter that helps the vanilla and chocolate flavors stand out. They are bold and never fail to impress guests.</p>
+      <a href="#" class="btn my-pink-btn">View Recipe</a>
+      </div>
+      </div>
+    </div> <!--end of column-->
+
+      <div class="col-md d-flex justify-content-center">
+        <div class="card shadow-lg mt-3" style="width: 18rem;">
+        <img src="macandcheese.jpg" class="card-img-top card-img-size" alt="Mac and Cheese">
+        
+        <div class="card-body">
+        <h2 class="card-title">Mac and Cheese</h2>
+        <p class="card-text">I have used this viral Mac and Cheese recipe countless times. Every holiday, every social gathering, and even familiy dinners, this recipe will be there. This is Chef Tini's popular recipe, that I've slightly altered to taste more impressive with the addition of smoked gouda.</p>
+       <a href="#" class="btn btn my-pink-btn">View Recipe</a>
+      </div>
+       </div>
+      </div> <!--end of column-->
+
+      <div class="col-md d-flex justify-content-center">
+        <div class="card shadow-lg mt-3" style="width: 18rem;">
+        <img src="kimchirice.jpg" class="card-img-top card-img-size" alt="Kimchi Fried Rice">
+        
+        <div class="card-body">
+        <h2 class="card-title">Kimchi Fried Rice</h2>
+        <p class="card-text"> This is the easiest and tastiest dinner, and makes for good leftovers. My favorite part about this recipe is I barely have to buy any produce since all of the veggies are in the Kimchi. I also like to meal-prep this dish, since It can be frozen and microwaved easily. </p>
+     <a href="#" class="btn btn my-pink-btn">View Recipe</a>
+    </div>
+    </div>
+      </div> <!--end of column-->
+
+  </div> <!--end of row 1-->
+
+  <div class="row"> <!--row 2-->
+    <div class="col-md d-flex justify-content-center">
+      <div class="card shadow-lg mt-3" style="width: 18rem;">
+        <img src="carneasada.jpeg" class="card-img-top card-img-size" alt="Carne Asada">
+      
+      <div class="card-body">
+       <h2 class="card-title">Carne Asada</h2>
+        <p class="card-text">When I first found out how easy it is to make carne asada, it immedietly became part of my rotation of frequent recipes. I'll never pay extra at Chipotle again! Its great on it's own, and pairs great with bowls, burritos, tortas, even on top of a plate of fries.  </p>
+    <a href="#" class="btn btn my-pink-btn">View Recipe</a>
+    </div>
+    </div>
+    </div> <!--end of column-->
+
+    <div class="col-md d-flex justify-content-center">
+      <div class="card shadow-lg mt-3" style="width: 18rem;">
+       <img src="soygarlic.jpg" class="card-img-top card-img-size" alt="Soy Garlic Chicken">
+      
+      <div class="card-body">
+       <h2 class="card-title">Soy Garlic Fried Chicken</h2>
+       <p class="card-text"> This is a recipe I totally stole from my mom... It's our take on Korean Fried Chicken, but instead of using drumsticks, this recipe uses chicken thighs for that extra juiciness. They're light and crispy and coated in a delicious aromatic garlicy soy sauce.</p>
+    <a href="#" class="btn btn my-pink-btn">View Recipe</a>
+    </div>
+    </div>
+    </div> <!--end of column-->
+
+    <div class="col-md d-flex justify-content-center">
+      <div class="card shadow-lg mt-3" style="width: 18rem;">
+
+       <img src="kimchijigae.jpg"  class="card-img-top card-img-size" alt="Kimchi Stew">
+     
+     <div class="card-body">
+      <h2 class="card-title">Kimchi Jigae Stew</h2>
+       <p class="card-text">This is my absolute favorite on a cold day, or if I'm at home sick. It's packed with probitics and everything thats good for you, and the spiciness does wonders for clogged sinuses. I love to fry my kimchi in the pork-belly fat to release and deepen the flavors. I wish I could eat this everyday. </p>
+    <a href="#" class="btn btn my-pink-btn">View Recipe</a>
+    </div>
+    </div>
+    </div> <!--end of column-->
+  
+  </div> <!--end of row 2-->
+
+<!--end of recipes-->
+
+<footer class="row border my-footer pt-3 text-center mt-3">
+
+  
+  <div class="col-sm fw-bold">
+    <p>🍓 Thank you for visiting my page! 🍓</p>
+  </div>
+
+</footer>
+
+    </div> <!--.container-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+
+  </body>
+</html>
