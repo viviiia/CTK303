@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorite Recipes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!--My CSS sheet overrides my bootstrap, so I put some style here. I wanted to use my own colors-->
+  <style> 
+
+    .my-nav {
+    background-color: #f8e0ec; 
+    }
+
+    .form-control {
+    border-color: #ac6689;
+    }
+
+    .form-control:focus {
+      border-color: #ac6689;
+      box-shadow: 0 0 0 0.25rem rgba(172, 102, 137, 0.25);
+    }
+
+    .my-brand {
+    font-size: 1.75rem;    
+    font-weight: 700;           
+    color: #ac6689 !important;   
+    text-shadow: 0 0 10px white;  
+    }
+
+
+    .navbar .btn {
+      border-color: #ac6689;
+      color: #ac6689;
+    }
+
+    .navbar .btn:hover {
+      background-color: #ac6689;
+      color: white;
+    }
+
+    .banner-img {
+      width: 100%;
+      height: 250px;      
+      object-fit: cover;  
+      object-position: center;
+    }
+
+    .my-footer {
+    border-color: #ac6689;
+    background-color: #f8e0ec;
+    }
+
+    a{
+      color: #ac6689;
+    }
+    a:hover {
+      color: maroon;
+    }
+
+    .my-pink-btn {
+      background-color: #e8c9d8; 
+      color: black;              
+      text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .my-pink-btn:hover {
+      background-color: #ac6689;
+    }
+
+    .card-img-size {
+      height: 150px;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+
+  </style>
+
+  </head>
+  <body>
+    <div class="container">
+
+  <nav class="navbar navbar-expand-lg my-nav">
+    
+     <div class="container-fluid">
+    <a class="navbar-brand my-brand" href="recipes-home.html">🍓 Vivia's Favorite Recipes</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link"  href="recipes-home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="entrees.html">Entrees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sides</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Desserts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Drinks</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn my-pink-btn" type="submit">Search</button>
+      </form>
+
+    </div> 
+    </div><!--container-fluid-->
+  </nav>
+
+    <h1 class="display-2 d-flex justify-content-center" >Browned Butter Chocolate Chip Cookies</h1>
+    <img class="img-fluid banner-img" src="cookies.jpg" alt="cookies">
+
+    <h2 class="mt-4">About</h2>
+    <p>My go-to cookie recipe that I will die behind! What makes these cookies special is the browned butter that helps the vanilla and chocolate flavors stand out. They are bold and never fail to impress guests.</p>
+    </p>
+    <h2 class="mt-4">Recipe</h2>
+    <h2 class="mt-4">Tips</h2>
+
+ 
+
+<footer class="row border my-footer pt-3 text-center mt-3">
+
+  
+  <div class="col-sm fw-bold">
+    <p>🍓 Thank you for visiting my page! 🍓</p>
+  </div>
+
+</footer>
+
+    </div> <!--.container-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+
+  </body>
+</html>
