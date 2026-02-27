@@ -1,0 +1,267 @@
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #AC6F94;
+  font-family: 'Jura', sans-serif;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+#wrapper {
+  margin: 1.5rem auto;
+  width: 95%;
+  background-color: #FFD5E0;
+  box-sizing: border-box;
+}
+
+
+/* header */
+
+
+header {
+  padding: 2.5rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.header-title {
+  animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  margin: 0 0 1.25rem 0;
+  color: #000;
+  text-shadow:
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff;
+}
+
+.video-thumbnail {
+  animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.beyonce-logo {
+  animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  width: 60%;
+  height: auto;
+  justify-self: center;
+}
+
+
+main {
+  padding: 0;
+}
+
+.hero-section {
+  animation: fadeInUp 0.8s ease-out forwards;
+  grid-column: 1 / span 12;
+  background-color: #ffffff;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.hero-section h2 {
+  margin-top: 0;
+  font-size: 2.25rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+
+/* footer   */
+
+footer {
+  padding: 2.5rem 0;
+  align-items: center;
+}
+
+.billboard {
+  grid-column: 1 / span 12;
+  width: 100%;
+  height: auto;
+}
+
+.audio-player {
+  grid-column: 1 / span 12;
+  margin-top: 1.5rem;
+}
+
+audio {
+  width: 100%;
+}
+
+/* animation  */
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/*  30rem (480px)  mobile */
+
+
+@media all and (min-width: 30rem) {
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-title {
+    grid-column: 2 / span 10;
+  }
+
+  .video-thumbnail {
+    grid-column: 2 / span 10;
+  }
+
+  .beyonce-logo {
+    grid-column: 2 / span 10;
+    width: 70%;
+    justify-self: center;
+  }
+
+  .hero-section {
+    grid-column: 2 / span 10;
+    padding: 3rem 2rem;
+  }
+
+  .billboard {
+    grid-column: 2 / span 5;
+  }
+
+  .audio-player {
+    grid-column: 7 / span 5;
+    margin-top: 0;
+  }
+}
+
+
+/* 50rem (800px)  desktop */
+
+
+@media all and (min-width: 50rem) {
+
+  #wrapper {
+    max-width: 60rem; /* 960px */
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  header {
+    padding: 3rem 0;
+  }
+
+  .header-title {
+    grid-column: 2 / span 10;
+  }
+
+  .video-thumbnail {
+    grid-column: 2 / span 10;
+  }
+
+  .beyonce-logo {
+    grid-column: 4 / span 6;
+    width: 60%;
+    justify-self: center;
+  }
+
+  .hero-section {
+    grid-column: 2 / span 10;
+    padding: 3.5rem 3rem;
+  }
+
+  .hero-section h2 {
+    font-size: 3rem;
+  }
+
+  .hero-section p {
+    font-size: 1.75rem;
+  }
+
+  footer {
+    padding: 3rem 0;
+  }
+
+  .billboard {
+    grid-column: 2 / span 4;
+  }
+
+  .audio-player {
+    grid-column: 8 / span 4;
+  }
+}
+
+
+/* 40rem (640px)   tablet */
+
+
+@media all and (min-width: 40rem) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .header-title {
+    grid-column: 2 / span 10;
+  }
+
+  .video-thumbnail {
+    grid-column: 2 / span 10;
+  }
+
+  .beyonce-logo {
+    grid-column: 3 / span 8;
+    width: 65%;
+    justify-self: center;
+  }
+
+  .hero-section {
+    grid-column: 2 / span 10;
+    padding: 3rem 2.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1.6rem;
+  }
+
+  .billboard {
+    grid-column: 2 / span 5;
+  }
+
+  .audio-player {
+    grid-column: 7 / span 5;
+  }
+}
